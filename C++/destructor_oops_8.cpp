@@ -1,28 +1,55 @@
 #include <iostream>
 using namespace std;
 
-class Student
+class Test
 {
 public:
-  Student()
+  Test()
   {
-    cout << "Constructor Called\n";
+    cout << "A\n";
   }
 
-  ~Student()
+  ~Test()
   {
-    cout << "Destructor Called \n";
+    cout << "B\n";
   }
 };
 
 int main()
 {
-  Student s1;
+  Test t1;
 
-  cout << "Inside Main\n";
+  {
+    Test t2;
 
-  return 0;
+    cout << "C\n";
+  }
+
+  cout << "D\n";
 }
+
+// class Student
+// {
+// public:
+//   Student()
+//   {
+//     cout << "Constructor Called\n";
+//   }
+
+//   ~Student()
+//   {
+//     cout << "Destructor Called \n";
+//   }
+// };
+
+// int main()
+// {
+//   Student s1;
+
+//   cout << "Inside Main\n";
+
+//   return 0;
+// }
 
 // class Student
 // {
