@@ -17,15 +17,19 @@ public:
 
 int main()
 {
-  Test t1;
+  Test a;
 
   {
-    Test t2;
+    Test b;
 
-    cout << "C\n";
+    {
+      Test c;
+    }
+
+    cout << "X\n";
   }
 
-  cout << "D\n";
+  cout << "Y\n";
 }
 
 // class Student
