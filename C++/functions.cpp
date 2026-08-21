@@ -82,12 +82,47 @@ string palindrome(string word)
   }
 
   return "Yes";
+};
+
+int power(int a, int b)
+{
+  int ans = 1;
+  for (int i = 1; i <= b; i++)
+  {
+    ans = ans * a;
+    cout << "i=" << i << ", ans=" << ans << endl;
+  }
+  return ans;
+};
+
+bool isEven(int a)
+{
+  if (a & 1)
+  {
+    return false;
+  }
+  else
+  {
+    return true;
+  }
+}
+
+bool isOdd(int a)
+{
+  if (a & 0)
+  {
+    return false;
+  }
+  else
+  {
+    return true;
+  };
 }
 
 int main()
 {
 
-  //   return_type function_name(parameters)
+  //   return_type function_name(parameters)s
   // {
   //     // code
   // }
@@ -118,6 +153,9 @@ int main()
   // cout << result << endl;
 
   // cout << palindrome("abba");
+
+  int pipi = power(2, 3);
+  cout << "Answer: " << pipi << endl;
 
   return 0;
 }
