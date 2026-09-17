@@ -7,9 +7,9 @@ class Employee
 public:
   string name;
 
-  Employee()
+  Employee(string naam)
   {
-    name = "jo bhi apka naam hai: ";
+    name = naam;
   };
 
   virtual void work() = 0;
@@ -18,7 +18,7 @@ public:
 class Developer : public Employee
 {
 public:
-  Developer(string naam)
+  Developer(string naam) : Employee(naam)
   {
     name = naam;
   };
@@ -32,7 +32,7 @@ public:
 class Designer : public Employee
 {
 public:
-  Designer(string naam)
+  Designer(string naam) : Employee(naam)
   {
     name = naam;
   };
