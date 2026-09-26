@@ -138,3 +138,122 @@ for num in arr:
 
 print(count)
 
+a = 10
+b = 20
+print(a + b)
+
+x = 5
+y = 8
+print(x + y)
+
+
+def add(a, b):
+    return a + b
+
+
+print(add(10, 20))
+print(add(5, 8))
+
+
+def greet():
+    print("Hello Krishna")
+
+
+greet()
+
+
+def add(x, y):  # Parameters
+    return x + y
+
+
+add(3, 5)  # Arguments
+
+
+def square(n):
+    return n * n
+
+
+x = square(5)
+print(x)
+
+
+x = 100
+
+
+def demo():
+    x = 10
+    print(x)
+
+
+demo()
+print(x)
+
+
+def power(base, exp=2):
+    return base**exp
+
+
+print(power(5))
+print(power(5, 3))
+
+
+def countdown(n):
+    if n == 0:
+        return
+
+    print(n)
+    countdown(n - 1)
+
+
+countdown(5)
+
+
+def func(n):
+    if n == 0:  # Base Case
+        return
+
+    func(n - 1)
+
+
+def sum_n(n):
+    if n == 0:
+        return 0
+
+    return n + sum_n(n - 1)
+
+
+def fun():
+    return 10
+
+
+print(fun())
+
+
+def add(a, b):
+    print(a + b)
+
+
+x = add(3, 4)
+print(x)
+
+
+def f(n):
+    if n == 0:
+        return
+
+    print(n)
+    f(n - 1)
+
+
+f(3)
+
+
+def f(n):
+    if n == 0:
+        return
+
+    f(n - 1)
+    print(n)
+
+
+f(4)
