@@ -257,3 +257,49 @@ def f(n):
 
 
 f(4)
+
+
+s = "Krishna"
+
+print(s[0])
+print(s[3])
+print(s[-1])
+
+s = "Krishna"
+
+print(s[0:3])
+
+s = "hello"
+
+print(s[::-1])
+
+s = "Krishna"
+
+print(len(s))
+
+s = "cat"
+
+s = "b" + s[1:]
+
+print(s)
+
+
+for ch in s:
+    print(ch)
+
+
+for i in range(len(s)):
+    print(i, s[i])
+
+
+s = "banana"
+
+count = 0
+
+for ch in s:
+    if ch == "a":
+        count += 1
+
+print(count)
+
+
