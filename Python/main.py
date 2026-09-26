@@ -302,4 +302,77 @@ for ch in s:
 
 print(count)
 
+arr = [10, 20, 30, 40]
+nums = [1, 2, 3]
+mixed = [10, "Krishna", True]
+
+arr = [10, 20, 30]
+
+print(arr[1])
+
+arr[1] = 99
+
+print(arr)
+
+for num in arr:
+    print(num)
+
+for i in range(len(arr)):
+    print(i, arr[i])
+
+arr = [1, 2, 3]
+
+arr.append(4)
+
+print(arr)
+
+arr = [5, 6, 7]
+
+arr.pop()
+
+print(arr)
+
+
+arr.pop(1)
+
+
+arr = [1, 3]
+
+arr.insert(1, 2)
+
+print(arr)
+
+arr = [10, 20, 30]
+
+arr.remove(20)
+
+print(arr)
+
+
+arr[::-1]
+
+arr = [1,2,3,4,5]
+
+print(arr[1:4])
+
+
+grid = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+
+print(grid[1][2])
+
+
+arr = [5,1,8,3]
+
+len(arr)
+max(arr)
+min(arr)
+sum(arr)
+sorted(arr)
+
+arr.sort()
+
 
