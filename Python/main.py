@@ -351,21 +351,17 @@ print(arr)
 
 arr[::-1]
 
-arr = [1,2,3,4,5]
+arr = [1, 2, 3, 4, 5]
 
 print(arr[1:4])
 
 
-grid = [
-    [1,2,3],
-    [4,5,6],
-    [7,8,9]
-]
+grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
 print(grid[1][2])
 
 
-arr = [5,1,8,3]
+arr = [5, 1, 8, 3]
 
 len(arr)
 max(arr)
@@ -376,3 +372,62 @@ sorted(arr)
 arr.sort()
 
 
+# Dictionary - Hash Maps
+student = {
+    "Name": "Krishna",
+    "Age": 20,
+    "is_Student": True,
+    "branch": "BCA",
+}
+
+print(student["Name"])
+
+college = {}
+college["name"] = "College hun"
+college["location"] = "India"
+college["course"] = ["BCA", "BTECH", "BBA"]
+
+
+if "phone" in student:
+    print("Exists")
+
+print(student.get("phone"))
+
+freq = {}
+
+arr = [1, 2, 3, 45, 6, 78, 7, 6]
+
+for num in arr:
+    if num in freq:
+        freq[num] += 1
+    else:
+        freq[num] = 1
+
+
+print(freq)
+
+
+for key in freq:
+    print(key)
+
+
+for value in freq.values():
+    print(value)
+
+
+for key, value in freq.items():
+    print(key, value)
+
+
+freq = {}
+
+for num in arr:
+    if num in freq:
+        freq[num] += 1
+    else:
+        freq[num] = 1
+
+        freq = {}
+
+for num in arr:
+    freq[num] = freq.get(num, 0) + 1
