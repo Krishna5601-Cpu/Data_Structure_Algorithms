@@ -548,3 +548,26 @@ nums = [i for i in range(10) if i % 2 == 0]
 
 print(nums)
 
+
+# lambda
+def square(x):
+    return x * x
+
+
+sq = lambda x: x * x
+
+print(square(5))
+
+add = lambda a, b: a + b
+
+print(add(5, 3))  # Output: 8
+
+numbers = [1, 2, 3, 4, 5, 6]
+
+# Filter even numbers
+evens = list(filter(lambda x: x % 2 == 0, numbers))
+print(evens)  # Output: [2, 4, 6]
+
+# Square every number
+squared = list(map(lambda x: x**2, numbers))
+print(squared)  # Output: [1, 4, 9, 16, 25, 36]
