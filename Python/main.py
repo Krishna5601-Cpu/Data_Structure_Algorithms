@@ -431,3 +431,38 @@ for num in arr:
 
 for num in arr:
     freq[num] = freq.get(num, 0) + 1
+
+# Sets
+
+nums = {1, 2, 35, 6, 45}
+print(nums)
+
+nums = {1, 2, 2, 3, 3, 3}
+print(nums)
+
+s = {1, 2, 3, 4}
+
+s.add(5)
+s.add(6)
+s.remove(3)
+
+if 4 in s:
+    print("Found")
+
+arr = [1, 2, 2, 3, 1, 4]
+
+onlyUnique = list(set(arr))
+print(onlyUnique)
+
+# Unique
+A = {1, 2, 3}
+B = {3, 4, 5}
+
+print(A | B)
+
+# Intersection
+print(A & B)
+
+print(A ^ B)
+
+print(A - B)
