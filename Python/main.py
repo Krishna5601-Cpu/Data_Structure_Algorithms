@@ -466,3 +466,30 @@ print(A & B)
 print(A ^ B)
 
 print(A - B)
+
+
+# Enumerate 
+arr = ["A", "B", "C"]
+
+for i in range(len(arr)):
+    print(i, arr[i])
+
+for index, val in enumerate(arr):
+    print(f"{index}: {val}")
+
+fruits = ["apple", "banana", "cherry"]
+
+for index, fruit in enumerate(fruits, start=1):
+    print(f"#{index}: {fruit}")
+
+# Output:
+# #1: apple
+# #2: banana
+# #3: cherry
+
+fruits = ["apple", "banana", "cherry"]
+indexed_fruits = list(enumerate(fruits))
+
+print(indexed_fruits)
+# Output: [(0, 'apple'), (1, 'banana'), (2, 'cherry')]
+
