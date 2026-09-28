@@ -468,7 +468,7 @@ print(A ^ B)
 print(A - B)
 
 
-# Enumerate 
+# Enumerate
 arr = ["A", "B", "C"]
 
 for i in range(len(arr)):
@@ -492,4 +492,44 @@ indexed_fruits = list(enumerate(fruits))
 
 print(indexed_fruits)
 # Output: [(0, 'apple'), (1, 'banana'), (2, 'cherry')]
+
+# Zip
+
+names = ["Krishna", "Ayush", "Riya"]
+marks = [95, 82, 91]
+
+for name, mark in zip(names, marks):
+    print(name, mark)
+
+
+names = ["Alice", "Bob", "Charlie"]
+scores = [85, 92, 78]
+
+for name, score in zip(names, scores):
+    print(f"{name}: {score}")
+
+# Output:
+# Alice: 85
+# Bob: 92
+# Charlie: 78
+
+keys = ["name", "age", "city"]
+values = ["Alice", 25, "New York"]
+
+user_dict = dict(zip(keys, values))
+print(user_dict)
+# Output: {'name': 'Alice', 'age': 25, 'city': 'New York'}
+
+numbers = [1, 2, 3, 4, 5]
+letters = ["a", "b"]
+
+print(list(zip(numbers, letters)))
+# Output: [(1, 'a'), (2, 'b')]
+
+pairs = [(1, "a"), (2, "b"), (3, "c")]
+
+numbers, letters = zip(*pairs)
+
+print(numbers)  # Output: (1, 2, 3)
+print(letters)  # Output: ('a', 'b', 'c')
 
