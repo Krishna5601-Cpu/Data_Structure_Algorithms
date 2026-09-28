@@ -533,3 +533,18 @@ numbers, letters = zip(*pairs)
 print(numbers)  # Output: (1, 2, 3)
 print(letters)  # Output: ('a', 'b', 'c')
 
+# List Comprehensions
+
+squares = []
+
+for i in range(5):
+    squares.append(i * i)
+
+print(squares)
+
+squa = [i * i for i in range(6)]
+
+nums = [i for i in range(10) if i % 2 == 0]
+
+print(nums)
+
