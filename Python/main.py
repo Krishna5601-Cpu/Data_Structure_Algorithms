@@ -571,3 +571,41 @@ print(evens)  # Output: [2, 4, 6]
 # Square every number
 squared = list(map(lambda x: x**2, numbers))
 print(squared)  # Output: [1, 4, 9, 16, 25, 36]
+
+
+# Map
+nums = [1, 2, 3, 4]
+
+result = list(map(lambda x: x * 2, nums))
+
+print(result)
+
+words = ["python", "map", "function"]
+
+# Convert all strings to uppercase
+upper_words = list(map(str.upper, words))
+print(upper_words)
+# Output: ['PYTHON', 'MAP', 'FUNCTION']
+
+
+str_numbers = ["1", "2", "3", "4"]
+
+numbers = list(map(int, str_numbers))
+print(numbers)
+# Output: [1, 2, 3, 4]
+
+
+numbers = [1, 2, 3, 4, 5]
+
+# Square every number
+squared = list(map(lambda x: x**2, numbers))
+print(squared)
+# Output: [1, 4, 9, 16, 25]
+
+num1 = [1, 2, 3]
+num2 = [10, 20, 30]
+
+# Add corresponding elements from both lists
+sums = list(map(lambda x, y: x + y, num1, num2))
+print(sums)
+# Output: [11, 22, 33]
